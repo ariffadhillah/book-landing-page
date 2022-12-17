@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <!-- CSS -->
+
+  <!-- <title>Book</title> -->
+
+  <style>
+    iframe {
+      width: 950px;
+      height: 450px;
+    }
+    .backgroundColor {
+      background-color: #FBE3C6;
+    }
+
+    .hero-discritopns {
+      max-width: 500px;
+    }
+
+    /* .hero-discritopns h1{
+        font-size: 34px;
+        font-weight: 600;
+        letter-spacing: 0;
+    } */
+
+    .PFont {
+      font-family: 'Poppins', sans-serif !important;
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 0;
+      line-height: 1.8;
+    }
+    .faq h2 {
+      color: #fff;
+    }
+
+
+    .faq,
+    .HeroBook {
+        background-color: #869072;
+    }
+
+    .HeroBook h1 {
+        font-family: 'PT Serif', serif !important;
+        font-size: 2.9rem;
+        color: #fff;
+        line-height: 1.3;
+        letter-spacing: 0;
+        font-weight: 700;
+    }
+    .HeroBook .PFont {
+        color: #fff;
+    }
+    .HeroBook .btn.btn-primary {
+        border: 3px solid #ea787e;
+        color: #ea787e;
+        background-color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 3px;
+        letter-spacing: .2px;
+        transition: .5s;
+    }
+    .HeroBook .btn.btn-primary:hover {
+        background-color: #fff;
+        color: #ea787e;
+    }
+
+
+    .hero_img {
+      padding-right: 30px;
+      position: relative;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      display: inline-block;
+      /* animation: upDown 3s linear infinite alternate; */
+    }
+    .hero_img {
+      /* transform: translatey(0px);
+      -webkit-animation: float 6s ease-in-out infinite;
+      animation: float 6s ease-in-out infinite; */
+    }
+    .hero_img img {
+      position: relative;
+      z-index: 2;
+      border-radius: 2px;
+      /* box-shadow: 4px 0px 16px 6px rgb(4 10 33 / 8%); */
+      box-shadow: 22px 26px 36px 0 rgb(33 52 105 / 28%);
+     
+    }
+    
+
+    .btn.btn-primary {
+      background-color: #ea787e;
+      border: #ea787e;
+      padding: 10px 22px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      transition: .5s;
+      border-radius: 0;
+    }
+
+    .btncarosel {
+      background-color: #ea787e;
+      padding: 26px 22px;
+      border-radius: 2px;
+    }
+
+
+	.accordion-button:not(.collapsed) {
+			background-color: transparent;
+			box-shadow:none;
+			border-bottom: none;
+		}
+		.accordion-button:not(.collapsed),
+		.accordion-button {
+			font-family: 'Poppins', sans-serif !important;
+			color: #333;
+			font-size: 18px;
+			font-weight: 600;
+
+		}
+		.faq .accordion .accordion-item{
+			color: #000;
+			/* border-color: #e0e0e0; */
+			/* background: none !important; */
+			box-shadow: none;
+			border: 1px solid #e0e0e0;
+			border-radius: 4px;
+			margin-bottom: 1rem;
+			position: relative;
+			background: #fff;
+			transition: background .4s ease,border-color .4s;
+			box-shadow: 2px 0px 15px 5px rgb(1 6 33 / 5%);
+		}
+		
+		.accordion-button:focus {
+			/* border: 1px solid #e0e0e0 !important; */
+			box-shadow: none;
+		}
+		.H2 {
+      font-family: 'PT Serif', serif !important;
+      font-size: 2.35rem;
+      font-weight: 600;
+      line-height: 1.4;
+      color: #333;
+      letter-spacing: 0;
+    }
+  
+    .catalog .H2{
+      color: #ea787e;        
+    }
+
+    .MaxWidthSection {
+      max-width: 356px;
+    }
+
+    .Textpink {
+      color: #ea787e;
+      font-family: 'Poppins', sans-serif !important;
+      font-size: 16px;
+      font-weight: 500;
+      transition: .5s;
+    }
+
+    .Textpink i {
+      font-size: 14px;
+    }
+
+    .btn-check:focus+.btn,
+    .btn:focus {
+      box-shadow: none;
+    }
+
+    .achieve .card-body {
+      box-shadow: 2px 0px 15px 5px rgb(1 6 33 / 6%);
+      border: none;
+      border-radius: 5px;
+    }
+
+    .min50 {
+      margin-top: -50px;
+    }
+
+    .min155 {
+      margin-top: -155px;
+    }
+
+	.catalog img.img-fluid,
+    .ourproduct .card {
+      border-radius: 9px;
+      box-shadow: 22px 26px 36px 0 rgb(33 52 105 / 28%);
+      /* background-image: linear-gradient(80deg,#fbe3c6 12%,#fbe3c6 62%,#fbe3c6 104%); */
+      color: #000;
+    }
+    .achieve h5 {
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif !important;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+    .achieve .card-text {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.8;
+    }
+    .padding2 {
+        padding: 2.5rem;
+    }
+    .BtnBook {
+      cursor: none;
+      pointer-events: none;
+      margin-bottom: 0;
+    }
+    .BtnBook .vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern{
+        cursor: pointer;
+        pointer-events: all;
+        background-color: #ea787e !important;
+        border: #ea787e !important;
+        padding: 10px 30px !important;
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        letter-spacing: 1px !important;
+        transition: .5s;
+        border-radius: 0 !important;
+        color: #fff;
+        border: 3px solid #fff !important;
+        background-image: none;
+        background-image: none;
+        background-image: none;
+        background-repeat: none;
+    }
+
+    .BtnBook .vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern:hover {
+        opacity: .8;
+        background-color: #fff !important;
+        border: 3px solid #ea787e !important;
+        color: #ea787e !important;
+    }
+
+.card.cardAbout {
+    background: #fff;
+    /* padding: 20px 20px 30px; */
+    /* margin-bottom: 20px; */
+}
+.WidgetTitle {
+    font-family: 'PT Sans', sans-serif !important;
+    font-weight: 500;
+    color: #060606;
+    font-size: 23px;
+    line-height: 1.48em;
+    margin: 25px 0 10px;
+    text-transform: capitalize;
+    margin-top: 0 !important;
+    margin-bottom: 30px !important;
+}
+    
+.TitleName {
+    -webkit-box-shadow: inset 0 -8px 0 #ffbea5;
+    -moz-box-shadow: inset 0 -8px 0 #ffbea5;
+    box-shadow: inset 0 -8px 0 #ffbea5;
+    font-family: 'Poppins' !important;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3c3131;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: inset 0 -8px 0 #ffbea5;
+    line-height: 18px;
+    transition: .5s;
+    width: 220px;
+    margin: auto;
+}
+
+.author img.img-fluid {
+  border-radius: 10px;
+  position: relative;
+}
+
+.author .col-md-6 {
+  position: relative;
+}
+.author .colImg img {
+  z-index: 2;
+}
+.author .colImg::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 100px;
+  top: 36px;
+  z-index: 1;
+  border: 3px dotted #ea787e;
+  border-radius: 10px;
+  height: 100%;
+  width: 70%;
+}
+
+
+
+    @-webkit-keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.author h3.H2 {
+  /* font-family: 'Poppins', sans-serif !important; */
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  color: #534e4d;
+}
+.catalog .titleH5 {
+  color: #869072;
+}
+.titleH5 {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #ea787e;
+  display: inline-block;
+}
+.author .PFont {
+  max-width: 450px;
+  /* font-size: 16px; */
+  font-weight: 300;
+}
+ /*Divider  */
+ .faq .divider-traingle {
+  border-color: #fff;
+ }
+.divider-traingle {
+    width: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ea787e;
+    opacity: 0.8;
+    position: relative;
+    display: inline-block;
+}
+.divider-traingle:before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #ea787e;
+    top: -9px;
+    opacity: 0.5;
+    right: 50%;
+    transform: rotate(45deg);
+}
+.divider-traingle:after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: #ea787e;
+    top: -9px;
+    left: 45%;
+    opacity: 0.5;
+    transform: rotate(45deg);
+}
+.faq .divider-traingle::after,
+.faq .divider-traingle::before {
+  background: #fff;
+}
+
+
+/* end */
+
+/* Icons */
+.author .Icons i{
+  font-size: 16px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 30px;
+  background-color: #ea787e;
+  transition: .5s;  
+}
+.author .Icons i:hover {
+  opacity: .7;
+}
+
+.author .Icons i.fa-facebook-f {
+  padding: 10px 13px;
+}
+/* end */
+  </style>
+
+</head>
+
+<body>
+
+  <section class="HeroBook  pt-5 pb-5">
+    <div class="container pt-5 pb-5">
+      <div class="row pt-lg-5" data-aos="fade-up" data-aos-duration="850" data-aos-delay="850">
+        <div class="col-md-6 col-sm-12 d-flex align-items-center">
+          <div class="hero-discritopns">
+            <h1 class="block">We are excited to partner with Portland Community College</h1>
+            <p class="block mt-4 PFont">As a community college, Portland Community College provides access to quality education while promoting economic development and sustainability through diversity, equity, and inclusion. The founder of Jaclyn Creations and author, Jaclyn Rae is proud to be alumni of Portland Community College and to have her Vegan Recipe Book available for loan through PCC libraries as a resource in nutrition and plant-based eating. Her own plant-based lifestyle has taught her the importance of embracing cultural diversity to help vegans and veg-curious students overcome oppression within their own communities as well as lack of awareness of cultures that make veganism challenging. </p>
+            <a href="https://alliance-pcc.primo.exlibrisgroup.com/permalink/01ALLIANCE_PCC/u8c9oi/alma995373759601848" class="btn btn-primary mt-4" target="_blank">Request here</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 text-end ">
+          <div class="text-start mt-4 mb-5 pt-3">
+            <img src="https://jaclyncreations.com/wp-content/uploads/2022/12/PCC-Primary-Logo-R_White.png" alt="" class="img-fluid" width="470">
+          </div>
+          <div class="hero_img text-end mt-4">
+            <img width="520" src="https://staging.jaclyncreations.com/wp-content/uploads/2022/12/Raw-Vegan-Recipe-Book-img-fluid.png" alt="Raw Vegan Recipe Book" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="achieve pt-5 pb-5 mb-2">
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="MaxWidthSection">
+            <h2 class="H2">Sustainable meals are the future</h2>
+            <h6 class="mt-2 PFont">Jaclyn Creations recipes are designed with simple ingredients and offer a variety of nutrients and health benefits. This book features 30 of her signature raw vegan and gluten-free recipes that are versatile and delicious.</h6>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6 col-lg-4 mb-lg-0 mt-3">
+          <div class="card border-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <div class="card-body padding2">
+              <h5 class="card-title pt-2 pb-2">Begin to heal through the food you eat</h5>
+              <p class="card-text">Among the types of diets we cover in our cookbook are, but are not limited to:<br>
+                ○ Gluten-Free<br>
+                ○ Celiac Disease/Gluten intolerance<br>
+                ○ Alkaline<br>
+                ○ Low Fat<br>
+                ○ Low carb<br>
+                ○ Keto-friendly<br>
+                ○ Diabetes-friendly<br>
+                ○ Plant-based<br>
+                ○ Vegan</p>
+              <a href="#" class="btn Textpink p-0">Read more <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-lg-0 min50 ">
+          <div class="card border-0" data-aos="fade-up" data-aos-duration="900" data-aos-delay="900">
+            <div class="card-body padding2">
+              <h5 class="card-title pt-2 pb-2">What makes our recipes sustainable?</h5>
+              <p class="card-text">In addition to inspiring others, Jaclyn Rae supports animal-free food consumption, reducing carbon footprints by 73%, and promoting sustainability. Through proper nutrition, healthy choices, and a balanced lifestyle you and your loved ones can improve your abilities and enhance your life.</p>
+              <a href="#" class="btn Textpink p-0">Read more <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-lg-0 min155">
+          <div class="card border-0" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
+            <div class="card-body padding2">
+              <h5 class="card-title pt-2 pb-2">Increase overall health and healing</h5>
+              <p class="card-text">Jaclyn Creations exclusive raw vegan recipes, which include a variety of vegan protein sources, nutrient-rich plant-based foods, and proper food combinations to enhance your overall diet regimen and your lifeforce. Jaclyn loves using 100% whole plant-based foods in her recipes, which offer an alternative solution to increase your absorption/digestion, heal your body, and make you feel renewed.</p>
+              <a href="#" class="btn Textpink p-0">Read more <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="catalog backgroundColor pt-5 pb-2">
+    <div class="container pt-5 pb-4">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-6 text-center mb-5">
+          <h5 class="titleH5">book PREVIEW</h5>
+          <h2 class="H2">Look inside our digital recipe book and get inspired!</h2>
+          <p class="PFont mt-3 pt-1">Have a look before you request materials.</p>
+          <h4 class="divider-traingle"></h4>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-6 mt-3">
+          <div class="card bg-transparent border-0">
+            <div class="card-body p-0">
+              <img src="https://staging.jaclyncreations.com/wp-content/uploads/2022/12/Raw-Vegan-Recipe-Book-img-fluid.png" class="img-fluid rounded-2" alt="Raw Vegan Recipe Book">              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- font awesome  -->
+  <script src="https://kit.fontawesome.com/5168c53337.js" crossorigin="anonymous"></script>
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
